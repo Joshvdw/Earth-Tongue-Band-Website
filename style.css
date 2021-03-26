@@ -1,0 +1,834 @@
+/* COLORS */
+
+/* blue: #32ade8;
+dark-yellow:  #fcc200;
+bright-yellow: #ffeb01;
+red:  #f80400;
+dark-red: #e44237; */
+
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  color: #e44237;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.pageContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+hr {
+  margin: 70px 0;
+  border: 0;
+  border-top: 1px solid #e44237;
+  opacity: 0.6;
+}
+
+h1 {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+  overflow: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+.arrow {
+  color: #e44237;
+  text-decoration: none;
+}
+
+
+/* LOGO STYLING */
+
+.logo {
+  margin: 0 auto;
+}
+
+
+/* NAVIGATION MENU */
+
+.nav-bar {
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+
+.nav-bar a {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #f80400;
+  float: left;
+}
+
+.nav-bar a:hover {
+  font-weight: bold;
+  transform: scale(1.2);
+}
+
+
+/* BIO SECTION */
+
+.bio {
+  padding: 0 15px;
+}
+
+.profile-image {
+  float: right;
+  padding-left: 25px;
+}
+
+.profile-text {
+  float: left;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+/* READ MORE STYLING */
+
+.read-more {
+  position: relative;
+  float: left;
+}
+
+.read-more h3 {
+  margin-top: 10px;
+}
+
+.link1, .link2, .link3 {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+}
+
+.link3 {
+  margin-right: 0;
+}
+
+.links {
+  margin: 0 auto;
+  float: left;
+  line-height: normal;
+  position: absolute;
+  background-color: rgba(50,173,232,0.2);
+  bottom: 7.5px;
+  padding: 0 2px;
+}
+
+.links a {
+  font-size: 10px;
+  text-decoration: none;
+  display: inline;
+}
+
+.link1 p, .link2 p, .link3 p {
+  padding-left: 11px;
+  margin: 5px 0;
+  color: white;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  text-shadow: 0.5px 0.5px black;
+}
+
+
+/* ALBUM SECTION */
+
+.album-container {
+  padding: 0 15px 25px 15px;
+  margin-top: 0px;
+}
+
+.album-text {
+  float: left;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.album-text h3 {
+  padding-bottom: 1px;
+}
+
+.album-image {
+  float: right;
+  padding-left: 15px;
+}
+
+.bandcamp {
+  margin-top: 30px;
+  float: left;
+}
+
+
+/* QUOTES */
+
+.listen {
+  float: right;
+  padding-left: 15px;
+  padding-top: 30px;
+}
+
+.quote1, .quote2, .quote3 {
+  float: left;
+  padding: 35px 0 0 20px;
+  font-size: 98%;
+}
+
+.blurb {
+  margin-top: -13px;
+}
+
+.quote1 {
+  padding-left: 0;
+}
+
+.quote3 {
+  padding: 0;
+}
+
+
+/* MORE MUSIC */
+
+.more-music-container {
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 15px;
+  overflow: auto;
+}
+
+.more-music {
+  float: left;
+}
+
+.more-music img {
+  padding-right: 28px;
+  padding-bottom: 5px;
+}
+
+.more-music a p {
+  color: #e44237;
+  display: inline;
+  padding-right: 59px;
+  font-size: 15px;
+}
+
+.more-music h3 {
+  padding-bottom: 10px;
+}
+
+.album1 {
+  float: left;
+}
+
+.album2 {
+  float: right;
+}
+
+
+/* VIDEOS */
+
+.video-container {
+  padding: 0 15px;
+}
+
+.video-container h2 {
+  padding: 15px 0 30px 0;
+  line-height: 0;
+}
+
+.music-video-container {
+  margin: 0 auto;
+}
+
+.music-videos {
+  float: left;
+  padding: 0 10px 15px 0;
+  height: 230px;
+}
+
+.music-video-right {
+  float: right;
+  height: 230px;
+  padding-bottom: 15px;
+  padding-right: 0;
+}
+
+
+/* EVENTS */
+
+.gig-container {
+  padding: 0 15px;
+}
+
+.gig-container h2 {
+  padding: 15px 0 15px 0;
+}
+
+table {
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+table td, th {
+  padding: 10px 10px;
+}
+
+button {
+  border: 1px solid;
+  border-radius: 2px;
+  box-sizing: content-box;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+
+/* PAST EVENTS */
+
+.poster {
+  float: left;
+  padding: 5px;
+  transition: transform .2s;
+}
+
+.poster:hover {
+  transform: scale(1.5);
+}
+
+.row img {
+  height: 279px;
+}
+
+.past h2 {
+  padding: 5px;
+}
+
+
+/* FOOTER */
+
+.footer-container {
+  /* background-color: brown !important; */
+  /* overflow: hidden; */
+  margin: -8px;
+}
+
+.footer {
+  margin-top: 75px;
+}
+
+.footer-image {
+  float: left;
+  padding-right: 15px;
+  margin-bottom: 50px;
+}
+
+.footer-text {
+  float: right;
+  padding-left: 15px;
+}
+
+.footer-text h3 {
+  margin-top: 5px;
+  padding-bottom: 35px;
+}
+
+.footer-text p a {
+  color: #32ade8;
+  text-decoration: underline;
+}
+
+.spacer {
+  clear: both;
+  float: left;
+  display: inline-block;
+  padding-right:200px;
+}
+
+.profile2 {
+  float: right;
+}
+
+
+
+/* COLUMNS */
+
+.col {
+  float: left;
+  padding: 12px;
+}
+
+.col12{
+  width: 100%;
+}
+
+.col11{
+  width: 91.66%;
+}
+
+.col10{
+  width: 83.33%;
+}
+
+.col9{
+  width:75%;
+}
+
+.col8{
+  width:66.66%;
+}
+
+.col7{
+  width:58.33%;
+}
+
+.col6{
+  width:50%;
+}
+
+.col5{
+width: 41.66%;
+}
+
+.col4{
+  width:33.33%;
+}
+
+.col3-5{
+  width: 31.33%;
+}
+
+.col3{
+  width: 25%;
+}
+
+.col2 {
+  width: 16.66%;
+}
+
+.col1{
+  width: 8.33%;
+}
+
+.row:after{
+  clear:both;
+  display: block;
+  content: '';
+}
+
+
+/* LARGE SCREENS 1100px */
+
+@media screen and (max-width:1100px) {
+
+  /* COLUMNS */
+
+  .colL12{
+    width: 100%;
+  }
+
+  .colL11{
+    width: 91.66%;
+  }
+
+  .colL10{
+    width: 83.33%;
+  }
+
+  .colL9{
+    width:75%;
+  }
+
+  .colL8{
+    width:66.66%;
+  }
+
+  .colL7{
+    width:58.33%;
+  }
+
+  .colL6{
+    width:50%;
+  }
+
+  .colL5{
+  width: 41.66%;
+  }
+
+  .colL4{
+    width:33.33%;
+  }
+
+  .colL3-5{
+    width: 31.33%;
+  }
+
+  .colL3{
+    width: 25%;
+  }
+
+  .colL2 {
+    width: 16.66%;
+  }
+
+  .colL1{
+    width: 8.33%;
+  }
+
+  .row:after{
+    clear:both;
+    display: block;
+    content: '';
+  }
+
+  .pageContainer{
+    max-width: 1100px;
+  }
+
+
+/* BIO SECTION */
+
+  .link1, .link2 {
+    margin-right: 27px;
+  }
+
+
+/* MUSIC SECTION */
+
+  .album-text {
+    font-size: 13px;
+  }
+
+  .bandcamp {
+    margin-top: 0;
+    float: right;
+  }
+
+  .listen {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .quote1, .quote2, .quote3 {
+    padding: 0;
+    font-size: 95%;
+  }
+
+  .quote1 {
+    padding-right: 10px;
+  }
+
+  .more-music-container {
+    float: left;
+  }
+
+/* VIDEO SECTION */
+
+  .music-videos {
+    height: 350px;
+    padding: 0 0 10px 0;
+  }
+
+  .music-video-right {
+    height: 350px;
+    padding: 0 0 10px 5px;
+  }
+
+/* FOOTER SECTION */
+
+  .footer-text {
+    font-size: 80%;
+  }
+
+}
+
+
+@media screen and (max-width:970px) {
+
+  .profile-text {
+    font-size: 13px;
+  }
+
+  .album-text {
+    font-size: 11px;
+  }
+
+  .music-videos {
+    height: 350px;
+  }
+
+  .link1, .link2 {
+    margin-right: 24px;
+  }
+
+  .footer-text {
+    font-size: 70%;
+  }
+}
+
+
+@media screen and (max-width:856px) {
+
+  .profile-text {
+    font-size: 11.5px;
+  }
+
+  .album-text {
+    font-size: 11px;
+  }
+
+  .music-videos {
+    height: 300px;
+    padding: 0 0 10px 0;
+  }
+
+  .music-video-right {
+    height: 300px;
+    padding: 0 0 10px 5px;
+  }
+
+  .link1, .link2 {
+    margin-right: 22px;
+  }
+
+  .footer-text {
+    font-size: 60%;
+  }
+
+  .bandcamp {
+    width: 100%;
+  }
+}
+
+
+/* MEDIUM SCREENS 800px */
+
+@media screen and (max-width:800px) {
+
+  /* COLUMNS */
+
+  .colM12{
+    width: 100%;
+  }
+
+  .colM11{
+    width: 91.66%;
+  }
+
+  .colM10{
+    width: 83.33%;
+  }
+
+  .colM9{
+    width:75%;
+  }
+
+  .colM8{
+    width:66.66%;
+  }
+
+  .colM7{
+    width:58.33%;
+  }
+
+  .colM6{
+    width:50%;
+  }
+
+  .colM5{
+  width: 41.66%;
+  }
+
+  .colM4{
+    width:33.33%;
+  }
+
+  .colM3-5{
+    width: 31.33%;
+  }
+
+  .colM3{
+    width: 25%;
+  }
+
+  .colM2 {
+    width: 16.66%;
+  }
+
+  .colM1{
+    width: 8.33%;
+  }
+
+  .row:after{
+    clear:both;
+    display: block;
+    content: '';
+  }
+
+  .pageContainer{
+    max-width: 800px;
+  }
+
+/* BIO SECTION */
+
+  .profile-image {
+    padding-left: 0;
+  }
+
+  .profile-text {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .link1, .link2 {
+    margin-right: 16px;
+  }
+
+/* MUSIC SECTION */
+
+  .album-text {
+    font-size: 14px;
+  }
+
+  .bandcamp {
+    margin-top: 15px;
+  }
+
+  .album-text h3 {
+    margin-top: 0;
+  }
+
+  .album-image {
+    padding-left: 0;
+  }
+
+  .quote1, .quote2, .quote3 {
+    font-size: 90%;
+  }
+
+/* VIDEO SECTION */
+
+  .music-videos {
+    height: 350px;
+    padding: 0 0 10px 0;
+  }
+
+  .music-video-right {
+    height: 350px;
+    padding: 0 0 10px 0;
+  }
+
+/* FOOTER SECTION */
+
+  .footer-text h3 {
+    margin-bottom: -25px;
+    font-size: 55%;
+  }
+}
+
+
+/* SMALL SCREENS 600px */
+
+@media screen and (max-width:600px) {
+
+  /* COLUMNS */
+
+  .colS12{
+    width: 100%;
+  }
+
+  .colS11{
+    width: 91.66%;
+  }
+
+  .colS10{
+    width: 83.33%;
+  }
+
+  .colS9{
+    width:75%;
+  }
+
+  .colS8{
+    width:66.66%;
+  }
+
+  .colS7{
+    width:58.33%;
+  }
+
+  .colS6{
+    width:50%;
+  }
+
+  .colS5{
+  width: 41.66%;
+  }
+
+  .colS4{
+    width:33.33%;
+  }
+
+  .colS3-5{
+    width: 31.33%;
+  }
+
+  .colS3{
+    width: 25%;
+  }
+
+  .colS2 {
+    width: 16.66%;
+  }
+
+  .colS1{
+    width: 8.33%;
+  }
+
+  .row:after{
+    clear:both;
+    display: block;
+    content: '';
+  }
+
+  .pageContainer{
+    max-width: 600px;
+  }
+
+  .link1, .link2 {
+    margin-right: 10px;
+  }
+
+  .quote1, .quote2, .quote3 {
+    font-size: 80%;
+  }
+
+  table td {
+    padding: 20px 5px;
+  }
+
+  .footer-text {
+    font-size: 50%;
+  }
+
+}
